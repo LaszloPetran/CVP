@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<style>
+    body {
+        margin:auto;
+        width: 500px;
+        height: 700px;
+        border: 1px solid black; /*for testing purposes*/
+        }
+     
+    .leftcont { 
+        float: left;
+        width:30%;
+        height: 100%;
+        background-color: limegreen;
+        display: grid;
+        grid-template-rows: 4fr 1fr 6fr 1fr 9fr 1fr 3fr;
+        }
+        
+        img{
+            border-radius: 50%;
+            padding: 15% 15% 15% 15%;
+        }
+        
+    .leftcont div:nth-child(2) , .leftcont div:nth-child(4), .leftcont div:nth-child(6) {
+        background-color:  #333333;
+        color: limegreen;
+        text-align: center;
+        font-size: 12px;
+        padding: 6px;
+        }
+        
+    .leftcont div:nth-child(3), .leftcont div:nth-child(5) {
+        font-size: 8px;
+        padding: 15px;
+        text-align: justify;
+        }
+        
+        #hobbydiv {
+            margin: auto;
+        }
+    
+    .rightcont {
+        float: left;
+        width: 70%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: repeat(10, 1fr);    
+        }
+        
+    #namediv {
+        font-size: 28px;
+        padding: 40px 40px 0px 20px;
+        }
+        #spec { 
+            color: limegreen;
+        } 
+        
+    #titlediv {
+        font-size: 12px;    
+        padding: 0px 40px 40px 20px;
+        }
+        
+    #specdiv1, #specdiv2, #specdiv3 {
+          margin: auto;
+          width: 90%;
+          padding-bottom: 10px;
+          border-bottom: 3px solid limegreen;
+        }
+        
+        #icon1, #icon2, #icon3 {
+            padding-right: 10px;
+        }  
+        
+        #icon4, #icon5, #icon6 {
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+        
+        #educationdiv, #expdiv {
+            margin: auto;
+            width: 90%;
+            padding-top: 20px; padding-bottom: 20px;
+        }
+        
+        .years {
+            margin: auto;
+            width: 25%;
+            float: left;
+            font-size: 8px;
+            
+        }
+        
+        .description {
+            margin: auto;
+            width :75%;
+            float: left;
+            font-size: 8px;
+        }   
+            
+    @media (max-width: 1280px) {
+        
+    } 
+</style> 
+    
+
+</head>
+    
+<body>
+    <div id="leftcolumn" class="leftcont">
+        
+        <div ><img src="https://lesliepknox.com/wp-content/uploads/2019/03/OC-prof.jpg" class="center" height="90" width="90"></div>
+        <div >CONTACT</div>
+        <div >
+            Address<br>
+            Wembley, London<br><br>
+            Mobile<br>
+            +44 7447008461<br><br>
+            Email<br>
+            laszlo.petran@gmail.com<br><br>
+            Website<br>
+            lesliepknox.com<br><br>
+            Skype<br>
+            Laszlo Petran<br><br>
+        </div>
+        <div >ABOUT ME</div>
+        <div id="aboutmediv">I work as a delivery driver and also I'm an Author of 15 novels, and translator with 
+            a passion for writing and creating stories. I had been bulding my programming experience since 2018, first with javascript, then Java, and as I bacame
+            interested in Artificial Intelligence, I started learning Python language as it is widely used, and popular. 
+            By becoming an expert programmer I could move to any areas in software development, making my stories alive with adventure games, and also  
+            developing my own ideas into creative softwares. To work in a professional team to learn and practice more and more is one of my main goal. As the world of programming is evolving, 
+            there is a lot to learn, tons of challenges, and lots of opportunities to build up a secure life with a great work. </div>
+        <div >HOBBIES</div>
+        <div id="hobbydiv">
+            <i class='fas fa-motorcycle' id="icon4" style='font-size:18px'></i>
+            <i class='fas fa-keyboard' id="icon5" style='font-size:18px'></i>
+            <i class='fas fa-pen-alt' id="icon6" style='font-size:18px'></i>
+        </div>
+    </div>
+        
+    <div id="rightcolumn" class="rightcont">
+        <div id="namediv"><span id="spec">LASZLO</span> PETRAN</div> 
+        <div id="titlediv">Python Back-end developer, Freelance Writer, Translator</div>
+        <div id="specdiv1"><i class='fas fa-graduation-cap' id="icon1" style='font-size:18px'></i>EDUCATION</div>       
+    <div id="educationdiv">
+        <div class="years">2019-Present <br>London</div>
+        <h2 class="description"> Openclassrooms</h2>
+        <div class="description">Java Backend Developer</div><br><br>
+        <div class="years">2010-2014 <br> London</div>
+        <div class="description">Dozens of small courses <br>in Science area, Creative Writing, <br> and Proficiency English.</div><br><br>
+        <div class="years">2019-Present<br> London</div>
+        <h2 class="description"> UDEMY Online courses (Enrolled, In Progress), and self teaching Python </h2>
+        <div class="description">Java Masterclass, Python Flask, Kivy, <br> Ethical Hacking and Cyber Security </div><br><br>
+       
+    </div>
+        <div id="specdiv2"><i class='fas fa-briefcase' id="icon2" style='font-size:18px'></i>PROGRAMMING EXPERIENCE</div>
+    <div id="expdiv">
+        <div class="years">2018-Present <br> London</div>
+        <h2 class="description">HTML, CSS, JAVASCRIPT</h2>
+        <div class="description">CV Coded in HTML and CSS, Text Based Adventure game<br> </div><br>
+        
+        <div class="years">2018-Present<br> London</div>
+        <h2 class="description">Core Java</h2>
+        <div class="description">Openclassrooms Back-End developer (In progress)
+            </div><br>
+        <div class="years">2018-Present<br> London</div>
+        <h2 class="description">UDEMY Online Courses </h2>
+        <div class="description"> Java Masterclass (Enrolled, in progress)</div><br><br>
+        <div class="years">2018-Present <br> London </div>
+        <h2 class="description">Private self-teaching in Python</h2> 
+        <div class="description">Python, Flask Framework, Kivy, Json and databases, Rest API<br></div><br><br>
+        <div class="years">2018-Present <br>London</div>
+        <h2 class="description"> UDEMY Online Courses</h2>
+        <div class="description"> Interested in Ethical Hacking and Cyber Security (Enrolled, In Progress)<br> </div>
+    </div>
+        <div id="specdiv3"><i class='fas fa-pencil-alt' id="icon3" style='font-size:18px'></i>REFERENCES</div><br>
+        <div class="description">Adventure Game(Javascript) and Novel writing <br><br>
+            <a style='font-size: 14px' href="https://lesliepknox.com/">Leslie P. Knox Author site</a><br>
+            <a style='font-size: 14px' href="https://github.com/LaszloPetran/PythonLanguagePracticeAPP">Laszlo Petran Github Language learning App </a><br>
+         </div>
+    
+    </div>
+</body>
+</html>
